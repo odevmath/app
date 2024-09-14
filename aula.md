@@ -504,3 +504,13 @@ switch (dia) {
 >
 > - `break` no `switch` evita que o código continue executando os casos seguintes.
 > - Sempre cuide para não criar condições que nunca são satisfeitas (loop infinito) e garantir que a lógica esteja clara.
+
+# Módulos em Node.js
+- [x] Importação de módulos (require, CommonJS)
+
+ No bash: usamos o comando "npm install", no casso do nosso módulo: `npm install inquire`
+
+- [x] Biblioteca 'inquirer' para criar prompts interativos
+
+## Programação assíncronas e Promises:
+[x] Uso de funções assíncronas (async/await)
