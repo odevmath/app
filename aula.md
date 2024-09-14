@@ -15,9 +15,9 @@ JS, como tantas outas linguagens é "Case Sensitive", isto é, ela diferencia ma
 - [x] Processar os dados (manipular, alterar...)
 - [x] Apresentar os dados
 
-## 1. Peças de uma linguagem:
+## Peças de uma linguagem:
 
-- [x] 1. Comentários: //conteúdo e /_ bloco de conteúdo _/
+- [x] 1. Comentários: //conteúdo e /_bloco de conteúdo_/
 - [x] 2. Tipos de dados (string, number, boolean)
 - [x] 3. Declaração de variáveis (let, const)
   - Escopo
@@ -29,6 +29,25 @@ JS, como tantas outas linguagens é "Case Sensitive", isto é, ela diferencia ma
   - funcition named / arrow function
 - [] 6. Controle de fluxo (if/else)
 - [] 7. Estrutura de repetição (for, while)
+
+## 1. Comentários
+
+// Hello, World! - Aqui utilizamos duas barras para comentar
+/_ Para comentar um bloco inteiro usamos => /_ _/
+/_ Comentários na medida certa são importantes dentro do código para poder trazer clareza e justificar determinados usos e trechos de códigos utilizados. \*/
+
+vejamos um trecho de código:
+
+```js
+console.log("Hello, World!");
+"console" - Objeto;
+(".log('Hello, World!')");
+```
+
+Função: uma caixinha com algumas ou várias informações dentro desta caixinha, lá dentro ela coleta este dado, processa e posteriormente ela apresenta. Nós não vemos todo este processo, mas é desta forma que ocorre. (veremos isto mais tarde).
+=> nesta função usamos um tipo de dado chamado "string", que é conjunto de letras, ou seja, textos
+
+\*/
 
 ## 2. Tipos de Dados
 
@@ -54,6 +73,15 @@ console.log(mensagem);
 ```
 
 Embora a const 'mensagem' já tenha sido declarada, no escopo global, com o valor "Olá, Mundo!", dentro do escopo local foi realizada uma nova declaração que está isolada do escopo global evitando conflitos.
+
+```js
+const mensagem = "Olá, Mundo!";
+{
+  const mensagem = "Hello, World!";
+  console.log(mensagem);
+}
+console.log(mensagem);
+```
 
 ## 4. Operadores
 
@@ -377,3 +405,102 @@ const multiplicar = (a, b) => a * b;
 
 console.log(multiplicar(2, 3)); // Output: 6
 ```
+
+## 7. Estrutura de Repetição
+
+Estruturas de repetição (ou loops) em JavaScript permitem executar um bloco de código várias vezes, de acordo com uma condição. As principais são:
+
+### 7.1 While: foco do bootcamp
+
+Continua executando enquanto a condição for verdadeira.
+
+```js
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+```
+
+### 7.2 For:
+
+for: Ideal para quando você sabe o número exato de repetições.
+
+```js
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+```
+
+### 7.3 Do While:
+
+Similar ao while, mas garante que o código seja executado ao menos uma vez.
+
+```js
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+```
+
+## 08. Condicionais
+
+Condicionais permitem que você execute diferentes blocos de código com base em condições específicas. Aqui estão os principais tipos:
+
+`if`: Executa um bloco de código se a condição for verdadeira.
+
+```js
+let idade = 18;
+if (idade >= 18) {
+  console.log("Você é maior de idade.");
+}
+```
+
+`if`... `else`: Executa um bloco de código se a condição for verdadeira e outro bloco se for falsa.
+
+```js
+let idade = 16;
+if (idade >= 18) {
+  console.log("Você é maior de idade.");
+} else {
+  console.log("Você é menor de idade.");
+}
+```
+
+`if`, `else if` e `else`: Permite testar múltiplas condições.
+
+```js
+let nota = 75;
+if (nota >= 90) {
+  console.log("Excelente");
+} else if (nota >= 70) {
+  console.log("Bom");
+} else {
+  console.log("Precisa melhorar");
+}
+```
+
+`switch`: Executa um bloco de código com base em diferentes valores possíveis de uma expressão.
+
+```js
+let dia = 3;
+switch (dia) {
+  case 1:
+    console.log("Segunda-feira");
+    break;
+  case 2:
+    console.log("Terça-feira");
+    break;
+  case 3:
+    console.log("Quarta-feira");
+    break;
+  default:
+    console.log("Dia inválido");
+}
+```
+
+> **Dicas:**
+>
+> - `break` no `switch` evita que o código continue executando os casos seguintes.
+> - Sempre cuide para não criar condições que nunca são satisfeitas (loop infinito) e garantir que a lógica esteja clara.
