@@ -1,9 +1,9 @@
 # To Do
 
-- [] Criar metas
-- [] Listar metas
+- [x] Criar metas
+- [x] Listar metas
   - Metas não realizadas
   - Metas realizadas
-- [] Marcar/desmarcar metas realizadas
+- [x] Marcar/desmarcar metas realizadas
 - [] Remover Metas
 - [] Sistema de Mensagens

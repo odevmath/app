@@ -22,11 +22,13 @@ JS, como tantas outas linguagens é "Case Sensitive", isto é, ela diferencia ma
 - [x] 3. Declaração de variáveis (let, const)
   - Escopo
   - Variáveis
-- [x] 4. Operadores (atribuição, concatenação, matemáticos, lógicos)
+- [x] 4. Operadores (atribuição, concatenação, matemáticos, lógicos, spread operator: ...)
 - [x] 5. Estrutura de Dados (functions, object, array)
-  - Criar, passar argumentos
-  - Executar
-  - funcition named / arrow function
+  - [x] Criar, passar argumentos
+  - [x] Executar
+  - [x] funcition named / arrow function
+  - [x] Métodos de array:  Toda função que está dentro de um objeto
+  - [x] HOF (Higher Order Functions): find, forEach, filter
 - [] 6. Controle de fluxo (if/else)
 - [] 7. Estrutura de repetição (for, while)
 
@@ -211,6 +213,8 @@ Estruturas de dados são formas de organizar e armazenar dados de maneira eficie
 ### 5.1 Arrays
 
 Um array é uma lista ordenada de valores, onde cada valor é acessado por um índice numérico que começa em 0. Arrays são usados para armazenar coleções de dados e manipular listas de itens.
+
+métodos de arrays que vimos: push, find, forEach
 
 Sintaxe:
 
