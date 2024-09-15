@@ -515,6 +515,12 @@ switch (dia) {
  No bash: usamos o comando "npm install", no casso do nosso módulo: `npm install inquire`
 
 - [x] Biblioteca 'inquirer' para criar prompts interativos
+- [x] FS (File System)
 
 ## Programação assíncronas e Promises:
 [x] Uso de funções assíncronas (async/await)
+
+## JSON
+- [x] Javascript Object Notation (.json)
+- [x] JSON.parse(): Transforma de JSON para JS
+- [x] JSON.stringify(): Transforma de JS para JSON

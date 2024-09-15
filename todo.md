@@ -7,3 +7,4 @@
 - [x] Marcar/desmarcar metas realizadas
 - [x] Remover Metas
 - [x] Sistema de Mensagens
+- [x] Sistema de carregar/salvar metas
